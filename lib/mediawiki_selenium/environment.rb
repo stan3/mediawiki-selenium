@@ -382,7 +382,7 @@ module MediawikiSelenium
     end
 
     def browser_config
-      lookup_all(browser_factory.all_binding_keys, default: nil).reject { |k, v| v.nil? }
+      lookup_all(browser_factory.all_binding_keys, default: nil).reject { |_k, v| v.nil? }
     end
 
     def password_variable
