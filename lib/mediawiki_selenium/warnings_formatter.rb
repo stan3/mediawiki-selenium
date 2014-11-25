@@ -1,4 +1,4 @@
-require "cucumber/formatter/console"
+require 'cucumber/formatter/console'
 
 module MediawikiSelenium
   class WarningsFormatter
@@ -23,7 +23,7 @@ module MediawikiSelenium
     def after_features(features)
       if @warning_counts.any?
         @warning_counts.each do |type, count|
-          message = "#{count} warning#{count > 1 ? "s" : ""}"
+          message = "#{count} warning#{count > 1 ? 's' : ''}"
           message += " due to #{type}" unless type == :default
           @io.puts format_string(message, :pending)
         end

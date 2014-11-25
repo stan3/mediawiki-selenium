@@ -1,4 +1,4 @@
-require "mediawiki_api"
+require 'mediawiki_api'
 
 module MediawikiSelenium
   # Provides more direct access to the API client from hooks and step

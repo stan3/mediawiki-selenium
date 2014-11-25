@@ -10,13 +10,13 @@ https://git.wikimedia.org/blob/mediawiki%2Fselenium/HEAD/CREDITS.
 =end
 
 # before all
-require "bundler/setup"
-require "page-object/page_factory"
-require "watir-webdriver"
+require 'bundler/setup'
+require 'page-object/page_factory'
+require 'watir-webdriver'
 
-require "mediawiki_selenium/support/modules/api_helper"
-require "mediawiki_selenium/support/modules/sauce_helper"
-require "mediawiki_selenium/support/modules/strict_pending"
+require 'mediawiki_selenium/support/modules/api_helper'
+require 'mediawiki_selenium/support/modules/sauce_helper'
+require 'mediawiki_selenium/support/modules/strict_pending'
 
 World { MediawikiSelenium::Environment.new(ENV) }
 
@@ -24,3 +24,4 @@ World(MediawikiSelenium::ApiHelper)
 World(MediawikiSelenium::PageFactory)
 World(MediawikiSelenium::SauceHelper)
 World(MediawikiSelenium::StrictPending)
+

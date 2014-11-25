@@ -1,5 +1,5 @@
-require "rest_client"
-require "uri"
+require 'rest_client'
+require 'uri'
 
 module MediawikiSelenium
   # Constructs remote browser sessions to be run via Sauce Labs. Adds the
@@ -12,7 +12,7 @@ module MediawikiSelenium
   #
   module RemoteBrowserFactory
     REQUIRED_CONFIG = [:sauce_ondemand_username, :sauce_ondemand_access_key]
-    URL = "http://ondemand.saucelabs.com/wd/hub"
+    URL = 'http://ondemand.saucelabs.com/wd/hub'
 
     class << self
       def extend_object(factory)
@@ -51,7 +51,7 @@ module MediawikiSelenium
           url: "https://saucelabs.com/rest/v1/#{username}/jobs/#{sid}",
           user: username,
           password: key,
-          headers: { content_type: "application/json" },
+          headers: { content_type: 'application/json' },
           payload: {
             public: true,
             passed: status == :passed,

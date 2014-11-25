@@ -146,7 +146,7 @@ module MediawikiSelenium
     # Whether browsers should be left open after each scenario completes.
     #
     def keep_browser_open?
-      lookup(:keep_browser_open, default: "false") == "true"
+      lookup(:keep_browser_open, default: 'false') == 'true'
     end
 
     # Returns the configured value for the given env variable name.
@@ -297,7 +297,7 @@ module MediawikiSelenium
     # @return [String]
     #
     def user_label(id = nil)
-      user(id).gsub("_", " ")
+      user(id).gsub('_', ' ')
     end
 
     # Navigates the current browser to the given wiki.
@@ -333,9 +333,9 @@ module MediawikiSelenium
         # Prefixing relative paths with an explicit "./" guarantees proper
         # parsing of paths like "Special:Page" that would otherwise be
         # confused for URI schemes.
-        if path.include?(":")
+        if path.include?(':')
           path_uri = URI.parse(path)
-          path = "./#{path}" if path_uri.class == URI::Generic && !path.start_with?("/")
+          path = "./#{path}" if path_uri.class == URI::Generic && !path.start_with?('/')
         end
 
         url = URI.parse(url).merge(path).to_s
@@ -378,7 +378,7 @@ module MediawikiSelenium
     private
 
     def api_url_from(wiki_url)
-      URI.parse(wiki_url).merge("/w/api.php").to_s
+      URI.parse(wiki_url).merge('/w/api.php').to_s
     end
 
     def browser_config
@@ -386,7 +386,7 @@ module MediawikiSelenium
     end
 
     def password_variable
-      name = lookup(:mediawiki_password_variable, default: "")
+      name = lookup(:mediawiki_password_variable, default: '')
       name.empty? ? :mediawiki_password : normalize_key(name)
     end
 
