@@ -5,25 +5,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 1
-# Configuration parameters: CountComments.
-Metrics/ClassLength:
-  Max: 139
-
-# Offense count: 5
-# Configuration parameters: CountComments.
-Metrics/MethodLength:
-  Max: 18
-
-# Offense count: 1
-Metrics/PerceivedComplexity:
-  Max: 8
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/Alias:
-  Enabled: false
-
 # Offense count: 10
 # Cop supports --auto-correct.
 Style/BlockComments:
@@ -78,12 +59,6 @@ Style/LeadingCommentSpace:
 # Offense count: 2
 # Cop supports --auto-correct.
 Style/RedundantSelf:
-  Enabled: false
-
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-Style/SignalException:
   Enabled: false
 
 # Offense count: 2
