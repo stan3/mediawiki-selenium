@@ -24,7 +24,8 @@ module Cucumber::Formatter
       else
         sauce_job_page = 'Uh-oh. Could not find link to Sauce Labs job URL.'
       end
-      ([sauce_job_page] + ["#{exception.message} (#{exception.class})"] + exception.backtrace).join("\n")
+      ([sauce_job_page] + ["#{exception.message} (#{exception.class})"] +
+        exception.backtrace).join("\n")
     end
   end
 end

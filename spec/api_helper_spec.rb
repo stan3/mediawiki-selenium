@@ -61,7 +61,8 @@ module MediawikiSelenium
             let(:client2) { double(MediawikiApi::Client) }
 
             before do
-              expect(MediawikiApi::Client).to receive(:new).with(alternative_api_url).and_return(client2)
+              expect(MediawikiApi::Client).to \
+                receive(:new).with(alternative_api_url).and_return(client2)
               expect(client2).to receive(:log_in).with('mw user', 'mw password')
             end
 

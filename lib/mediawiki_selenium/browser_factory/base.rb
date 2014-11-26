@@ -16,7 +16,8 @@ module MediawikiSelenium
         #   module MediawikiSelenium::BrowserFactory
         #     class Firefox < Base
         #       bind(:browser_language) do |language, options|
-        #         options[:desired_capabilities][:firefox_profile]["intl.accept_languages"] = language
+        #         options[:desired_capabilities][:firefox_profile]["intl.accept_languages"] = \
+        #           language
         #       end
         #     end
         #   end

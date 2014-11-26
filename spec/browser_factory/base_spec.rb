@@ -176,7 +176,8 @@ module MediawikiSelenium::BrowserFactory
           let(:config) { { foo: 'x' } }
 
           it 'invokes the binding with the configured value' do
-            expect { |block| factory.bind(:foo, &block) && subject }.to yield_with_args('x', options)
+            expect { |block| factory.bind(:foo, &block) && subject }.to \
+              yield_with_args('x', options)
           end
         end
 
@@ -194,7 +195,8 @@ module MediawikiSelenium::BrowserFactory
           let(:config) { { foo: 'x', bar: 'y' } }
 
           it 'invokes the binding with the configured values' do
-            expect { |block| factory.bind(:foo, :bar, &block) && subject }.to yield_with_args('x', 'y', options)
+            expect { |block| factory.bind(:foo, :bar, &block) && subject }.to \
+              yield_with_args('x', 'y', options)
           end
         end
 
