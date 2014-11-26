@@ -34,8 +34,6 @@ module MediawikiSelenium
       feature.extend(FeatureWarnings)
     end
 
-    private
-
     module FeatureWarnings
       def mw_warn(message, type = :default)
         mw_warnings[type] ||= []
