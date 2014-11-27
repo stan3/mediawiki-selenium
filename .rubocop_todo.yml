@@ -11,16 +11,6 @@
 Style/DotPosition:
   Enabled: false
 
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/EmptyLines:
-  Enabled: false
-
-# Offense count: 4
-# Cop supports --auto-correct.
-Style/EmptyLinesAroundBody:
-  Enabled: false
-
 # Offense count: 2
 # Configuration parameters: AllowedVariables.
 Style/GlobalVars:

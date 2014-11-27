@@ -12,7 +12,6 @@ When(/^upload bogus file (.+)$/) do |file_name|
   on(UploadPage).select_file = path
 end
 
-
 When(/^upload file (.+)$/) do |file_name|
   require 'tempfile'
   path = "#{Dir.tmpdir}/#{file_name}"

@@ -17,4 +17,3 @@ module MediawikiSelenium
   autoload :PageFactory, 'mediawiki_selenium/page_factory'
   autoload :RemoteBrowserFactory, 'mediawiki_selenium/remote_browser_factory'
 end
-

@@ -18,6 +18,5 @@ module MediawikiSelenium
         client.log_in(user, password)
       end
     end
-
   end
 end

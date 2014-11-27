@@ -13,7 +13,6 @@ module Cucumber
   module Formatter
     # Sauce Lab specific cucumber formatter
     class Sauce < Junit
-
       private
 
       def format_exception(exception)

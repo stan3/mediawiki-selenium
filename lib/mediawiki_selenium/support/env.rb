@@ -22,4 +22,3 @@ World(MediawikiSelenium::ApiHelper)
 World(MediawikiSelenium::PageFactory)
 World(MediawikiSelenium::SauceHelper)
 World(MediawikiSelenium::StrictPending)
-
