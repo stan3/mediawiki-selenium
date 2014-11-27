@@ -13,12 +13,6 @@ Style/DotPosition:
 
 # Offense count: 1
 # Cop supports --auto-correct.
-# Configuration parameters: AllowAdjacentOneLineDefs.
-Style/EmptyLineBetweenDefs:
-  Enabled: false
-
-# Offense count: 1
-# Cop supports --auto-correct.
 Style/EmptyLines:
   Enabled: false
 
