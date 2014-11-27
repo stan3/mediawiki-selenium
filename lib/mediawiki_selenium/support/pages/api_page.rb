@@ -1,6 +1,7 @@
 require 'page-object'
 require 'mediawiki_api'
 
+# Simplified interface for pages
 class APIPage
   include PageObject
 

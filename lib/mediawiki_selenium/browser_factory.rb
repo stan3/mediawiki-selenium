@@ -1,4 +1,5 @@
 module MediawikiSelenium
+  # abstraction for creating instances of different browsers
   module BrowserFactory
     autoload :Base, 'mediawiki_selenium/browser_factory/base'
     autoload :Firefox, 'mediawiki_selenium/browser_factory/firefox'

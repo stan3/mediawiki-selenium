@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 module MediawikiSelenium
+  # chrome factory tests
   module BrowserFactory
     describe Chrome do
       let(:factory_class) { Chrome }

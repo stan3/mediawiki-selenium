@@ -1,4 +1,5 @@
 module MediawikiSelenium
+  # exception for when environment configuration is missing a looked up value
   class ConfigurationError < StandardError
     attr_reader :name
 

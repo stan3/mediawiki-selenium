@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 module MediawikiSelenium
+  # phantomjs factory tests
   module BrowserFactory
     describe Phantomjs do
       let(:factory_class) { Phantomjs }

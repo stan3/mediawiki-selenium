@@ -1,4 +1,5 @@
 module MediawikiSelenium
+  # Common Sauce Labs code
   module SauceHelper
     # The current Sauce session ID.
     #

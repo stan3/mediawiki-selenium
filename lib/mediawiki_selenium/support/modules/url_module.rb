@@ -7,6 +7,7 @@
 # mediawiki_selenium top-level directory and at
 # https://git.wikimedia.org/blob/mediawiki%2Fselenium/HEAD/CREDITS.
 
+# Common URL definitions
 module URL
   def self.url(name)
     if ENV['MEDIAWIKI_URL']

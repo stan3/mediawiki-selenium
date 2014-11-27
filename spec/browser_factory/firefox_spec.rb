@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 module MediawikiSelenium
+  # firefox factory tests
   module BrowserFactory
     describe Firefox do
       let(:factory_class) { Firefox }

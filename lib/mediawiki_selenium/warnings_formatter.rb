@@ -1,6 +1,7 @@
 require 'cucumber/formatter/console'
 
 module MediawikiSelenium
+  # cucumber formatter to print warnings after each feature is run
   class WarningsFormatter
     include Cucumber::Formatter::Console
 
@@ -34,6 +35,7 @@ module MediawikiSelenium
       feature.extend(FeatureWarnings)
     end
 
+    # methods to extend feature for storing warnings
     module FeatureWarnings
       def mw_warn(message, type = :default)
         mw_warnings[type] ||= []

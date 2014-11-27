@@ -1,5 +1,6 @@
 require 'spec_helper'
 
+# tests for the ApiHelper module
 module MediawikiSelenium
   describe ApiHelper do
     let(:env) { Environment.new(config).extend(ApiHelper) }

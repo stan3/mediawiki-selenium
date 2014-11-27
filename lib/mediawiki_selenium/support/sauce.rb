@@ -11,6 +11,7 @@ require 'cucumber/formatter/junit'
 
 module Cucumber
   module Formatter
+    # Sauce Lab specific cucumber formatter
     class Sauce < Junit
 
       private

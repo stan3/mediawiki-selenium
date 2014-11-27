@@ -7,6 +7,7 @@
 # mediawiki_selenium top-level directory and at
 # https://git.wikimedia.org/blob/mediawiki%2Fselenium/HEAD/CREDITS.
 
+# Common code for using Selenium with Media Wiki
 module MediawikiSelenium
   VERSION = '0.4.0'
 end

@@ -1,5 +1,6 @@
 require 'spec_helper'
 
+# tests for the environment class
 module MediawikiSelenium
   describe Environment do
     subject { env }

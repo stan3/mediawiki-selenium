@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 module MediawikiSelenium
+  # base factory class tests
   module BrowserFactory
     describe Base do
       let(:factory_class) { Class.new(Base) }

@@ -1,5 +1,6 @@
 require 'spec_helper'
 
+# tests for the page factory module
 module MediawikiSelenium
   describe PageFactory do
     let(:env) { Environment.new(config).extend(PageFactory) }

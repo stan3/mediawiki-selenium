@@ -1,5 +1,6 @@
 require 'page-object'
 
+# constants for reset preferences page
 class ResetPreferencesPage
   include PageObject
 

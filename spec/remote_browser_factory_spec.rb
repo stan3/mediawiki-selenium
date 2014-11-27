@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'mediawiki_selenium/browser_factory/base'
 
+# tests for the remote browser factory
 module MediawikiSelenium
   describe RemoteBrowserFactory do
     subject { factory }

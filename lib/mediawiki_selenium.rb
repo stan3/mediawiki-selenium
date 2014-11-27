@@ -7,6 +7,7 @@
 # mediawiki_selenium top-level directory and at
 # https://git.wikimedia.org/blob/mediawiki%2Fselenium/HEAD/CREDITS.
 
+# Common code for using Selenium with Media Wiki
 module MediawikiSelenium
   autoload :VERSION, 'mediawiki_selenium/version'
   autoload :ApiHelper, 'mediawiki_selenium/support/modules/api_helper'
