@@ -1,4 +1,5 @@
 # coding: utf-8
+require 'English'
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'mediawiki_selenium/version'
@@ -17,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://gerrit.wikimedia.org/r/#/admin/projects/mediawiki/selenium'
   spec.license       = 'GPL-2'
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = `git ls-files`.split($RS)
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'cucumber', '~> 1.3', '>= 1.3.10'
