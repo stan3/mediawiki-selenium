@@ -12,11 +12,6 @@ Style/DotPosition:
   Enabled: false
 
 # Offense count: 2
-# Configuration parameters: AllowedVariables.
-Style/GlobalVars:
-  Enabled: false
-
-# Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, SupportedStyles, EnforcedStyleForEmptyBraces, SpaceBeforeBlockParameters.
 Style/SpaceInsideBlockBraces:

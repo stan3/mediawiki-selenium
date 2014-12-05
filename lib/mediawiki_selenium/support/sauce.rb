@@ -18,8 +18,10 @@ module Cucumber
       def format_exception(exception)
         if ENV['HEADLESS'] == 'true'
           sauce_job_page = ''
+        # rubocop:disable Style/GlobalVars
         elsif $session_id
           sauce_job_page = "Sauce Labs job URL: http://saucelabs.com/jobs/#{$session_id}\n"
+        # rubocop:enable Style/GlobalVars
         else
           sauce_job_page = 'Uh-oh. Could not find link to Sauce Labs job URL.'
         end
