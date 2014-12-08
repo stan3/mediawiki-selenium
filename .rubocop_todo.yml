@@ -23,9 +23,3 @@ Style/SpaceInsideBlockBraces:
 Style/SymbolProc:
   Enabled: false
 
-# Offense count: 6
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyleForMultiline, SupportedStyles.
-Style/TrailingComma:
-  Enabled: false
-

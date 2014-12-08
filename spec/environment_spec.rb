@@ -14,7 +14,7 @@ module MediawikiSelenium
         mediawiki_api_url: mediawiki_api_url,
         mediawiki_url: mediawiki_url,
         mediawiki_user: mediawiki_user,
-        mediawiki_password: mediawiki_password,
+        mediawiki_password: mediawiki_password
       }
     end
 
@@ -52,7 +52,7 @@ module MediawikiSelenium
           mediawiki_user: 'user',
           mediawiki_password: 'pass',
           mediawiki_user_b: 'user b',
-          mediawiki_password_b: 'pass b',
+          mediawiki_password_b: 'pass b'
         }
       end
 
@@ -67,7 +67,7 @@ module MediawikiSelenium
       it 'executes in the new environment for the alternative user and its password' do
         expect(new_config).to receive(:merge!).with(
           mediawiki_user: 'user b',
-          mediawiki_password: 'pass b',
+          mediawiki_password: 'pass b'
         )
         expect(new_env).to receive(:instance_exec).with('user b', 'pass b')
         subject
@@ -276,7 +276,7 @@ module MediawikiSelenium
           mediawiki_api_url: 'http://an.example/w/api.php',
           mediawiki_url_b: 'http://altb.example/wiki',
           mediawiki_api_url_b: 'http://altb.example/w/api.php',
-          mediawiki_url_c: 'http://altc.example/wiki',
+          mediawiki_url_c: 'http://altc.example/wiki'
         }
       end
 
@@ -416,7 +416,7 @@ module MediawikiSelenium
           mediawiki_url: 'http://an.example/wiki',
           mediawiki_url_b: 'http://alt.example/wiki',
           mediawiki_api_url: 'http://an.example/api',
-          mediawiki_api_url_b: 'http://alt.example/api',
+          mediawiki_api_url_b: 'http://alt.example/api'
         }
       end
 

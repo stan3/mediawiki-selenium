@@ -55,7 +55,7 @@ module MediawikiSelenium
           payload: {
             public: true,
             passed: status == :passed,
-            build: env.lookup(:build_number),
+            build: env.lookup(:build_number)
           }.to_json
         )
       end
