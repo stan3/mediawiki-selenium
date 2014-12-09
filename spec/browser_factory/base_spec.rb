@@ -12,7 +12,7 @@ module MediawikiSelenium
         subject { factory_class.bind(option_name, &block) }
 
         let(:option_name) { :foo }
-        let(:block) { proc { } }
+        let(:block) { proc {} }
 
         it 'adds a new default binding for the given option' do
           subject
@@ -76,7 +76,7 @@ module MediawikiSelenium
         before { subject }
 
         let(:option_name) { :foo }
-        let(:block) { proc { } }
+        let(:block) { proc {} }
 
         it 'adds a new binding for the given option' do
           expect(factory.bindings).to include(option_name)
