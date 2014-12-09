@@ -35,11 +35,11 @@ module MediawikiSelenium
           end
 
           it 'qualifies the path with the configured :mediawiki_url' do
-            expect_any_instance_of(page_class).to receive(:platform).
-              and_return(page_object_platform)
+            expect_any_instance_of(page_class).to receive(:platform)
+              .and_return(page_object_platform)
 
-            expect(page_object_platform).to receive(:navigate_to).
-              with('http://an.example/wiki/Special:RandomPage')
+            expect(page_object_platform).to receive(:navigate_to)
+              .with('http://an.example/wiki/Special:RandomPage')
 
             subject
           end

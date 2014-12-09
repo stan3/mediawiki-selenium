@@ -118,10 +118,10 @@ module MediawikiSelenium
         let(:capabilities) { double(Selenium::WebDriver::Remote::Capabilities) }
 
         before do
-          expect(Selenium::WebDriver::Remote::Capabilities).to receive(browser_name).
-            at_least(:once).and_return(capabilities)
-          expect(capabilities).to receive(:browser_name).
-            at_least(:once).and_return(browser_name)
+          expect(Selenium::WebDriver::Remote::Capabilities).to receive(browser_name)
+            .at_least(:once).and_return(capabilities)
+          expect(capabilities).to receive(:browser_name)
+            .at_least(:once).and_return(browser_name)
         end
 
         it 'creates a new Watir::Browser' do
@@ -164,10 +164,10 @@ module MediawikiSelenium
         let(:options) { { desired_capabilities: capabilities, http_client: client } }
 
         before do
-          expect(Selenium::WebDriver::Remote::Capabilities).to receive(browser_name).
-            at_least(:once).and_return(capabilities)
-          expect(Selenium::WebDriver::Remote::Http::Default).to receive(:new).
-            and_return(client)
+          expect(Selenium::WebDriver::Remote::Capabilities).to receive(browser_name)
+            .at_least(:once).and_return(capabilities)
+          expect(Selenium::WebDriver::Remote::Http::Default).to receive(:new)
+            .and_return(client)
         end
 
         it { is_expected.to be_a(Hash) }
