@@ -257,7 +257,7 @@ module MediawikiSelenium
     #
     def teardown(status = :passed)
       @factory_cache.each do |_, factory|
-        factory.each { |browser| browser.close } unless keep_browser_open?
+        factory.each(&:close) unless keep_browser_open?
         factory.teardown(self, status)
       end
     end
